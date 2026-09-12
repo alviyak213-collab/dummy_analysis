@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSaarthi - Cyber Cell Trainer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- html2pdf.js library for high-quality PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <aside class="sidebar no-print">
+        <div class="brand">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>SkillSaarthi</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#blueprint" class="nav-link active"><i class="fa-solid fa-map"></i> Blueprint</a></li>
+                <li><a href="#assessment-framework" class="nav-link"><i class="fa-solid fa-chart-pie"></i> Assessment Framework</a></li>
+                <li><a href="#questions" class="nav-link"><i class="fa-solid fa-list-check"></i> Questions Bank</a></li>
+                <li><a href="#delivery-strategy" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Trainer Strategy</a></li>
+                <li><a href="#scenarios" class="nav-link"><i class="fa-solid fa-user-ninja"></i> Practical Scenarios</a></li>
+                <li><a href="#evaluation" class="nav-link"><i class="fa-solid fa-clipboard-check"></i> Trainee Evaluation</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <!-- Section 1: Blueprint -->
+        <section id="blueprint" class="card">
+            <header class="section-header">
+                <i class="fa-solid fa-map header-icon"></i>
+                <div>
+                    <h1>1. Operational Blueprint</h1>
+                    <p class="subtitle">SkillSaarthi AI-Enabled Cybersecurity Trainer Manual Framework</p>
+                </div>
+            </header>
+            <div class="grid-2">
+                <div class="info-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Training Scope</h3>
+                    <p>Designed for government employees and cyber cell officers to assess competencies, identify skill gaps, provide tailored learning paths, and track operational readiness in defensive cybersecurity.</p>
+                </div>
+                <div class="info-box">
+                    <h3><i class="fa-solid fa-layer-group"></i> Core Domains Covered</h3>
+                    <ul class="styled-list">
+                        <li><strong>Python for Cybersecurity:</strong> Log processing, file handling, automation</li>
+                        <li><strong>Linux for Cybersecurity:</strong> Terminal commands, permission management, process monitoring</li>
+                        <li><strong>Networking Fundamentals:</strong> Protocols, packet inspection, firewalls, ports</li>
+                        <li><strong>Web Security:</strong> Injection vectors, SOP, XSS, SSRF, header defense</li>
+                        <li><strong>Incident Response:</strong> Forensic preservation, triage, CIA triad, chain of custody</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Assessment Framework -->
+        <section id="assessment-framework" class="card">
+            <header class="section-header">
+                <i class="fa-solid fa-chart-pie header-icon"></i>
+                <div>
+                    <h1>2. Assessment Framework</h1>
+                    <p class="subtitle">Structure, Scoring Logic, and Skill-Gap Analytics</p>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-num">30</span>
+                    <span class="stat-label">Total MCQs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">5</span>
+                    <span class="stat-label">Core Domains</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">6</span>
+                    <span class="stat-label">Questions per Domain</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">60</span>
+                    <span class="stat-label">Maximum Marks</span>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>Question & Mark Breakdown per Domain</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Difficulty Level</th>
+                            <th>Questions per Skill</th>
+                            <th>Mark Value per Q</th>
+                            <th>Total Skill Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge basic">Level 1 - Basic</span></td>
+                            <td>2</td>
+                            <td>1 Mark</td>
+                            <td>2 Marks</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge intermediate">Level 2 - Intermediate</span></td>
+                            <td>2</td>
+                            <td>2 Marks</td>
+                            <td>4 Marks</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge advanced">Level 3 - Advanced</span></td>
+                            <td>2</td>
+                            <td>3 Marks</td>
+                            <td>6 Marks</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Domain Total</strong></td>
+                            <td><strong>6 Questions</strong></td>
+                            <td>-</td>
+                            <td><strong>12 Marks</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="formula-box">
+                <h3><i class="fa-solid fa-calculator"></i> Skill-Gap Calculation Formula</h3>
+                <div class="equation">
+                    Skill Gap = Required Level - Current Level
+                </div>
+                <p><strong>Example Calculation:</strong> If the target level is Advanced (Level 3) and the learner's evaluated level is Basic (Level 1):</p>
+                <div class="equation-result">
+                    Skill Gap = 3 - 1 = 2, so the learner should focus on Intermediate and Advanced modules.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Questions Bank (Interactive) -->
+        <section id="questions" class="card">
+            <header class="section-header space-between">
+                <div>
+                    <h1>3. Cyber Cell Assessment Questions Bank</h1>
+                    <p class="subtitle">Interactive Quiz Editor - Edit, Delete, Add, or Export to PDF</p>
+                </div>
+                <div class="action-buttons no-print">
+                    <button id="add-q-btn" class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Add Question</button>
+                    <button id="export-pdf-btn" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Save as PDF</button>
+                </div>
+            </header>
+
+            <div id="pdf-container">
+                <div id="pdf-header" class="pdf-only-header">
+                    <h2>SkillSaarthi Cyber Cell Training Assessment Paper</h2>
+                    <p>Total Marks: 60 | Total Questions: 30 | Duration: 45 Minutes</p>
+                    <hr>
+                </div>
+                <div id="questions-list" class="questions-container">
+                    <!-- Questions dynamic rendering via flow.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Trainer Delivery Strategy -->
+        <section id="delivery-strategy" class="card">
+            <header class="section-header">
+                <i class="fa-solid fa-chalkboard-user header-icon"></i>
+                <div>
+                    <h1>4. Trainer Delivery Strategy</h1>
+                    <p class="subtitle">Suggested 11-Hour Modular Training Roadmap</p>
+                </div>
+            </header>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-shield"></i></div>
+                    <div class="timeline-content">
+                        <h3>Session 1: Cybersecurity Fundamentals</h3>
+                        <span class="time-tag"><i class="fa-regular fa-clock"></i> Duration: 2 Hours</span>
+                        <ul class="styled-list">
+                            <li>Confidentiality, Integrity, and Availability (CIA Triad)</li>
+                            <li>Threat Landscape: Phishing, Malware, Ransomware, Social Engineering</li>
+                            <li>Password Security Policies & Multi-Factor Authentication (MFA)</li>
+                            <li>Incident Reporting Channels & Initial Escalation Protocols</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-terminal"></i></div>
+                    <div class="timeline-content">
+                        <h3>Session 2: Python & Linux Hands-on Utilities</h3>
+                        <span class="time-tag"><i class="fa-regular fa-clock"></i> Duration: 3 Hours</span>
+                        <ul class="styled-list">
+                            <li>Python File I/O, regex parsing for log investigation</li>
+                            <li>Linux CLI: Process monitoring (`top`, `ps`), file permissions (`chmod`, `chown`)</li>
+                            <li>System log inspection (`/var/log/auth.log`) & listening sockets (`ss -tuln`)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="timeline-content">
+                        <h3>Session 3-5: Advanced Web Security & Incident Handling</h3>
+                        <span class="time-tag"><i class="fa-regular fa-clock"></i> Duration: 6 Hours</span>
+                        <ul class="styled-list">
+                            <li>Network protocols, port scanning detection, firewall rules</li>
+                            <li>Web Application vulnerabilities (XSS, SQLi, CSRF, SSRF)</li>
+                            <li>Live forensic triage, volatility capture, chain of custody compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Practical Scenario Exercises -->
+        <section id="scenarios" class="card">
+            <header class="section-header">
+                <i class="fa-solid fa-user-ninja header-icon"></i>
+                <div>
+                    <h1>5. Practical Classroom Discussion Scenarios</h1>
+                    <p class="subtitle">Real-World Incident Response Simulation Case Studies</p>
+                </div>
+            </header>
+
+            <div class="scenario-cards">
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <span class="scenario-num">Scenario 1</span>
+                        <h3>Credential Harvesting Attack</h3>
+                    </div>
+                    <p class="scenario-body">An employee receives an urgent email appearing to come from IT Support requesting immediate password verification via an external web link.</p>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <span class="scenario-num">Scenario 2</span>
+                        <h3>Shared Administrative Account Breach</h3>
+                    </div>
+                    <p class="scenario-body">A single master administrator password is shared across an entire department for convenience, leading to untraceable privilege escalation.</p>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <span class="scenario-num">Scenario 3</span>
+                        <h3>Workstation Ransomware Infection</h3>
+                    </div>
+                    <p class="scenario-body">Important operational files suddenly become encrypted with `.locked` extensions, and a ransom prompt appears on an analyst's desktop.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Required Trainee Action to Evaluate -->
+        <section id="evaluation" class="card">
+            <header class="section-header">
+                <i class="fa-solid fa-clipboard-check header-icon"></i>
+                <div>
+                    <h1>6. Trainee Action Evaluation Matrix</h1>
+                    <p class="subtitle">Standardized Checklist for Assessor Evaluation</p>
+                </div>
+            </header>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Evaluation Phase</th>
+                            <th>Trainee Required Action</th>
+                            <th>Key Performance Indicators (KPIs)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Threat Identification</strong></td>
+                            <td>Pinpoint exact threat type (Phishing, Insider Risk, Ransomware)</td>
+                            <td>Accurately names the vector without misclassification</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Impact Analysis</strong></td>
+                            <td>Assess potential operational damage to system and data CIA triad</td>
+                            <td>Identifies affected data sensitivity, scope, and service impact</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Immediate Action</strong></td>
+                            <td>Perform immediate containment steps (Network isolation, disconnect host)</td>
+                            <td>Executes isolation rapidly without powering down volatile RAM state</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Notification Protocol</strong></td>
+                            <td>Escalate incident via official CERT / Cyber Cell channels</td>
+                            <td>Logs accurate incident details and routes report to correct authority</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="flow.js"></script>
+</body>
+</html>
